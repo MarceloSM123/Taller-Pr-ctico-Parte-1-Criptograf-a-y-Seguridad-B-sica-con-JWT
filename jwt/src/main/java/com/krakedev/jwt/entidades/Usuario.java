@@ -71,6 +71,6 @@ public class Usuario {
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", rol='" + rol + '\'' +
-                '}';
+                '}' ;
     }
 }
