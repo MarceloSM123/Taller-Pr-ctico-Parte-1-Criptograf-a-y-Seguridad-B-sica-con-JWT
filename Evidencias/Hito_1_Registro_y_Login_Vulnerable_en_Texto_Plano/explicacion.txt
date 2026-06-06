@@ -1,0 +1,7 @@
+Este esquema de almacenamiento es críticamente vulnerable porque las contraseñas 
+se guardan en texto plano, permitiendo que cualquier atacante con acceso a la base 
+de datos (administrador interno, desarrollador, o mediante SQL Injection) pueda 
+leer directamente las credenciales de todos los usuarios. Con un simple SELECT, 
+el atacante obtiene acceso completo a cuentas de voluntarios y adoptantes, 
+comprometiendo toda la identidad del refugio. Además, si los usuarios reutilizan 
+contraseñas en otros servicios, el impacto se extiende fuera del sistema.
