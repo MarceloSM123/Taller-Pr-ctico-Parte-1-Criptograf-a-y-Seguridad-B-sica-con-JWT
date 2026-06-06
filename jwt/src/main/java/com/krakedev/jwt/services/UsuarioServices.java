@@ -80,7 +80,7 @@ public class UsuarioServices {
         Usuario usuario = usuarioOpt.get();
         
         // Validar la contraseña sin encriptacion
-      //  if (!password.equals(usuario.getPassword())) 
+       // if (!password.equals(usuario.getPassword())) 
         
         //validar la contraseña con encriptacion
         if(!BCrypt.checkpw(password, usuario.getPassword()))
