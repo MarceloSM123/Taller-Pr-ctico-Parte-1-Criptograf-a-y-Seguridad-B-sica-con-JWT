@@ -10,7 +10,7 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 public class jwtUtils {
 	private static final String CLAVE_SECRETA = "EstaEsUnaClaveSuperSecretaYMuyLarga1234567890!";
 	private static final String EMISOR = "KrakeDevBackend";
-	private static final long TIEMPO_EXPIRACION = 3600000;
+	private static final long TIEMPO_EXPIRACION = 1800000;
 
 	public static String generarToken(String username, String rol) {
 		Algorithm algoritmo = Algorithm.HMAC256(CLAVE_SECRETA);
