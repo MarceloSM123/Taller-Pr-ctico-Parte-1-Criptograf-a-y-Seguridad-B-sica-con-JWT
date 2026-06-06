@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.krakedev.jwt.jwtUtils;
+
 import com.krakedev.jwt.entidades.Usuario;
 import com.krakedev.jwt.entidades.repositories.UsuarioRepositorio;
 import com.krakedev.jwt.services.UsuarioServices;
+import com.krakedev.jwt.utils.jwtUtils;
 
 
 @RestController
@@ -64,6 +65,7 @@ public class AuthController {
 
 	    if (authHeader == null || !authHeader.startsWith("Bearer ")) {
 
+	    	
 	        return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
 	                .body("Acceso Denegado: Debes proveer un token Bearer valido en la cabecera Authorization");
 

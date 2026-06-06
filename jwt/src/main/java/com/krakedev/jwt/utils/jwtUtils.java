@@ -1,4 +1,4 @@
-package com.krakedev.jwt;
+package com.krakedev.jwt.utils;
 
 import java.util.Date;
 
